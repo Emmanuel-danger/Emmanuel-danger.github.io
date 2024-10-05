@@ -59,7 +59,7 @@ eqBtn.addEventListener("click", function() {
 (function(i, j) {
 symList = [];
 for (var i = 0; i < opnSyms.length; i++) {
-if (res.textContent.indexOf(opnSyms[i]) > -1) {
+if (res.textContent.idexOf(opnSyms[i]) > -1) {
 symList.push(opnSyms[i]);
 }
 }
@@ -77,3 +77,25 @@ res.textContent = "Invalid Syntax";
 }
 }(i, j));
 })
+var sqrtBtn = document.querySelector("#sqrt");
+sqrtBtn.addEventListener("click", function() {
+try {
+res.textContent = Math.sqrt(eval(res.textContent));
+} catch (e) {
+res.textContent = "Invalid Input";
+}
+});
+ 
+			
+ if(value == 'log');{
+expression = Math.log(expression);
+};
+if(value == 'sin');{
+expression = Math.sin(expression);
+};
+if(value == 'cos');{
+expression = Math.cos(expression);
+};
+ if(value == 'tan');{
+expression = Math.tan(expression);
+};

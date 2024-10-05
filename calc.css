@@ -1,7 +1,6 @@
 table{
 margin-left:auto;
 margin-right:auto;
-style="color:black"
 }
 textarea{
 display: block;
@@ -9,7 +8,7 @@ margin-bottom: 10px;
 margin-left:auto;
 margin-right:auto;
 border-radius: 5px;
-}
+}	
 button{
 height: 60px;
 width: 70px;

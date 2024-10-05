@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+
+
+</style>
 <title>KasiCoders 2.0 Calculator Project</title>
 <link rel="stylesheet"
 href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,7 +19,7 @@ crossorigin="anonymous">
 <div class="container">
 <div class="jumbotron">
 <h1 class="display-3">Dangerous Calculator</h1>
-<p class="lead">Emmanuel Dlamini msangano Calculator</p>
+<p class="lead">Emmanuel Dlamini mathematical Calculator</p>
 <hr class="my-4">
 </div>
 <textarea id="resultArea" readonly rows="1" cols="21" style="color:red"></textarea>
@@ -24,39 +28,60 @@ crossorigin="anonymous">
 <tr>
 <td></td>
 <td></td>
+<td><button id="x" class="btn btn-default"style="color:red">x<sub>2</sub></button></td> 
+<td><button id="x" class="btn btn-default"style="color:red">x<sub>3</sub></button></td>
 <td><button id="clrTxt" class="btn btn-danger">C</button></td>
 <td><button id="del" class="btn btn-default"><i
 class="material-icons" style="color:disco">backspace</i></button></td>
+<td><button id="tan" class="btn btn-default"style="color:red">log</button></td>
+
 </tr>
 <tr>
-<td><button id="num7" class="btn btn-default">7</button></td>
-<td><button id="num8" class="btn btn-default">8</button></td>
-<td><button id="num9" class="btn btn-default">9</button></td>
-<td><button id="op3" class="btn btn-default" style="color:red">&div;</button></td>
+<td><button id="num7" class="btn btn-default" style="color:blue">7</button></td>
+<td><button id="num8" class="btn btn-default"style="color:blue">8</button></td>
+<td><button id="num9" class="btn btn-default"style="color:blue">9</button></td>
+<td><button id="op3" class="btn btn-default" style="color:blue">&div;</button></td>
+<td><button id="sin" class="btn btn-default" style="color:blue">sin</button></td>
 </tr>
 <tr>
-<td><button id="num4" class="btn btn-default">4</button></td>
-<td><button id="num5" class="btn btn-default">5</button></td>
-<td><button id="num6" class="btn btn-default">6</button></td>
-<td><button id="op2" class="btn
-btn-default">&times;</button></td>
+<td><button id="num4" class="btn btn-default"style="color:red">4</button></td>
+<td><button id="num5" class="btn btn-default"style="color:red">5</button></td>
+<td><button id="num6" class="btn btn-default"style="color:red">6</button></td>
+ <td><button id="op2" class="btn
+ btn-default" style="color:red">&times;</button></td>
+<td><button id="log" class="btn btn-default"style="color:red">tan</button></td>
 </tr>
 <tr>
-<td><button id="num1" class="btn btn-default">1</button></td>
-<td><button id="num2" class="btn btn-default">2</button></td>
-<td><button id="num3" class="btn btn-default">3</button></td>
+<td><button id="num1" class="btn btn-default"style="color:green">1</button></td>
+<td><button id="num2" class="btn btn-default"style="color:green">2</button></td>
+<td><button id="num3" class="btn btn-default"style="color:green">3</button></td>
 <td><button id="op1" class="btn
-btn-default">&minus;</button></td>
+ btn-default" style="color:green">&minus;</button></td>
+<td><button id="cos" class="btn btn-default"style="color:green">cos</button></td>
 </tr>
 <tr>
-<td><button id="decp" class="btn btn-default">.</button></td>
-<td><button id="num0" class="btn btn-default">0</button></td>
-<td><button id="eq" class="btn btn-default">=</button></td>
+<td><button id="decp" class="btn btn-default"style="color:purple">.</button></td>
+<td><button id="sqrt" class="btn btn-default"style="color:purple">√</button></td>
+<td><button id="num0" class="btn btn-default"style="color:purple">0</button></td>
+<td><button id="eq" class="btn btn-default"style="color:purple">=</button></td>
 <td><button id="op0" class="btn
-btn-default">&plus;</button></td>
+btn-default"style="color:purple">&plus;</button></td>
+<td><button input type="button" onClick="myFun6()" value="()"></button></td>
+<td><button input type="button" onClick="myFun7()" value="."></button></td>
+
 </tr>
 </table>
 </div>
 <script type="text/javascript" src="calc.js"></script>
+<script type="text/javascript">
+    function del(){
+    var x=document.getElementsById('screen').value;
+	document.getElementsById('screen').value=xsub.subtr(0,x.length-1);
+	}
+	
+
+
+
+	</script>
 </body>
 </html>
